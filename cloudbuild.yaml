@@ -4,7 +4,7 @@ steps:
     args: ['clone', 'https://github.com/Kavipraveen/billing_system.git']
  
   # Install Python dependencies
-  - name: 'python:3.11.0'  # Adjust Python version if needed
+  - name: 'python:3.11.7'  # Adjust Python version if needed
     entrypoint: 'pip'
     args: ['install', '-r', 'requirements.txt']  # If you have a requirements.txt file
 
