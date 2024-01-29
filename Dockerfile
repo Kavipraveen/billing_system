@@ -4,4 +4,4 @@ WORKDIR /app  # Set working directory
  
 COPY . /app  # Copy all project files
  
-CMD ["python", "app.py"]  # Default command to run
+CMD ["python3", "app.py"]  # Default command to run
