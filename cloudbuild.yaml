@@ -5,8 +5,8 @@ steps:
 
   # Build Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/usecas4-ci-cd/usecase4cicd', '.']
+    args: ['build', '-t', 'gcr.io/usecase4-ci-cd/usecase4cicd', '.']
  
   # Push image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/usecas4-ci-cd/usecase4cicd']
+    args: ['push', 'gcr.io/usecase4-ci-cd/usecase4cicd']
