@@ -4,13 +4,13 @@ steps:
     args: ['clone', 'https://github.com/Kavipraveen/billing_system.git']
  
   # Install Python dependencies
-  - name: 'python:3'  # Adjust Python version if needed
-    entrypoint: 'pip'
-    args: ['install', '-r', 'requirements.txt']  # If you have a requirements.txt file
+  #- name: 'python:3'  # Adjust Python version if needed
+   # entrypoint: 'pip'
+    #args: ['install', '-r', 'requirements.txt']  # If you have a requirements.txt file
 
   # Build Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/usecas4-ci-cd/usecase4cicd2', '.']
+    args: ['build', '-t', 'gcr.io/usecas4-ci-cd/usecase4cicd', '.']
  
   # Push image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
